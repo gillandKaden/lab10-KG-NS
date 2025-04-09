@@ -8,10 +8,19 @@ One function per operation, in order.
 
 import math
 
+def hypotenuse(a, b):
+    try:
+        math.hypot(a, b) # can have negative nums
+    except ValueError:
+        raise ValueError
+
+def square_root(a):
+    return a ** 0.5
+
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -26,7 +35,7 @@ def div(a, b):
         raise ZeroDivisionError
 
 
-def log(a, b):
+def logarithm(a, b):
     try:
         return math.log(a, b)
     except ValueError:
@@ -34,6 +43,7 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
+
 
 
 
