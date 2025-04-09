@@ -18,13 +18,19 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    return a / b
+    try:
+        if b == 0:
+            raise ZeroDivisionError
+        return a / b
+    except ZeroDivisionError:
+        raise ZeroDivisionError
+
 
 def log(a, b):
     try:
         return math.log(a, b)
-    except ZeroDivisionError:
-        raise ZeroDivisionError
+    except ValueError:
+        raise ValueError
 
 def exp(a, b):
     return a ** b
