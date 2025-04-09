@@ -10,13 +10,17 @@ import math
 
 def hypotenuse(a, b):
     try:
-        math.hypot(a, b) # can have negative nums
+        return math.hypot(a, b) # can have negative nums
     except ValueError:
         raise ValueError
 
 def square_root(a):
-    return a ** 0.5
-
+    try:
+        if a < 0:
+            raise ValueError
+        return a ** 0.5
+    except ValueError:
+        raise ValueError
 def add(a, b): 
     return a + b
 
