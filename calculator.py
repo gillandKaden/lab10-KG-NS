@@ -14,7 +14,6 @@ def subtract(a, b): a - b
 def multiply(a, b): a * b
 
 def divide(a, b):
-
     try:
         if a == 0:
             raise ZeroDivisionError
