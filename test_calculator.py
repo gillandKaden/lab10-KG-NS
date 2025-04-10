@@ -1,4 +1,6 @@
 # https://github.com/gillandKaden/lab10-KG-NS
+# Partner 1: Kaden Gilland
+# Partner 2: Nicholas Simeone
 import unittest
 from calculator import *
 
